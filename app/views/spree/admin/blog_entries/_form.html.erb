@@ -79,9 +79,6 @@
     <%= form.field_container Spree.t(:blog_entry_featured_image) do %>
       <%= form.label :image, Spree.t(:blog_entry_featured_image) %><br />
       <%= form.file_field :image %>
-      <% if @blog_entry.image.present? %>
-        <%=  image_tag main_app.url_for(@blog_entry.image), height: '32', width: '32' %>
-       <% end %> 
     <% end %>
   </div><!-- col-sm-6 --> 
   </div><!-- row -->
